@@ -1,0 +1,106 @@
+header{
+    background: url(img/pic3.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 800px;
+}
+.tekst{
+   text-align: center;
+color: hsl(0, 0%, 100%);
+text-decoration: underline;
+padding-top: 11%; 
+letter-spacing: 4px;
+}
+
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  .teal.lighten-2 {
+    background-color: #448c85d6 !important;
+}
+  .btn-floating.btn-large {
+    width: 200px;
+    height: 70px;
+    padding: 0;
+    margin-top: 13%;
+}
+.btn-floating.btn-large i {
+    line-height: 70px;
+}
+
+.btn-large i {
+    font-size: 50px;
+}
+  .btn-floating{
+    border-radius: 1%;
+  }
+.section{
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+.tabs .indicator{
+    background-color: #000;
+}
+.tabs .tab a:hover, .tabs .tab a:focus.active {
+    background-color: transparent;
+}
+#przycisk{
+    margin-top: 20px; 
+}
+#przycisk a{
+    color: white;
+}
+.kontakt{
+    
+    color: black;
+}
+.kontakt:hover{
+    background-color: #26a69a;
+    color: #fff;
+}
+.photo{
+    height: auto;
+    max-width: 150%;
+}
+
+.pin-top {
+  position: relative;
+}
+
+
+.pin-bottom {
+  position: relative;
+}
+
+
+.pinned {
+  position: fixed !important;
+}
+ .metamorfozy{
+    display: none;
+ }  
+ .more{
+    width: 100px;
+ }
+ .more:hover .metamorfozy{
+    display: block;
+    width: auto;
+
+ }   
+@media screen and(max-width:600px){
+    header{
+        min-height: 500px;
+    }
+   .photo{
+    max-width: 200%;
+height: auto;
+   }
+    
+}
+.brand-logo img{
+    height: 90px;
+    width: 150px;
+    margin-bottom: 2px;
+}

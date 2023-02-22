@@ -38,10 +38,7 @@
                 <li class="more"><a href="#!">  WIĘCEJ </a>
                 <ul class="metamorfozy"><a href="zdjecia.html">ZDJĘCIA</a></ul>
                 </li>
-          
-   
-           </ul>  
-             
+           </ul>    
         </ul>
 
         <ul class="sidenav grey darken-4 center" id="mobile">
@@ -105,6 +102,15 @@
       </div>
     </div>
   </section>
+  <div class="fixed-action-btn direction-top active"
+  style="margin: 0 0 5 1px;   ">
+    <a id="gora" href="#header"class="btn btn-floating btn-large #26a69a" 
+    style="border-radius: 90%;
+    width: 50px;
+height: 50px;">
+      <i class="material-icons white-text" style="font-size: 30px;  line-height: 50px;">keyboard_arrow_up</i>
+    </a>
+  </div> 
   <!--parallax 1st-->
 <div class="parallax-container" >
   <div class="parallax">
@@ -127,38 +133,24 @@
       
     </div>
 
-      <div class="col s12 l6 offset-l1">
-
-        <h4 class="tab col s6 l6">
-          METAMORFOZY
-        </h4> 
-       <!-- <button class="btn col s5 l6 push-l2" id="przycisk"><a href="#">sprawdz wiecej</a></button>-->
-        <ul class="tabs">
-          <li class="tab col s6">
-            <a href="#dg"class="black-text">Przed</a>
-          </li> 
-          <li class="tab col s6">
-            <a href="#fs"class="black-text">Po</a>
-         </ul>
-
-         <div class="row" id="dg">
-          <div class="col s6 l6">
-          <p class="flow-text black-text"></p>
-      <img src="img/pic_przed.jpg" class="responsive-img materialboxed" >
-          </div>
-          <div class="col s6 l6"></div>
+    <div class="col s12 l6 offset-l1">
+      <h4 style="text-align:center">OSTATNIE ZDJĘCIA</h4>
+      <div class="carousel carousel-slider" data-indicators="true">  
+        <div class="col s12 l6 carousel-fixed-item ">
+        <button class="prev left white-text">  <i class="material-icons">chevron_left</i></button>
+        <button class="next right white-text">  <i class="material-icons">chevron_right</i></button> 
         </div>
-       
+        <a class="carousel-item" href="#one!"><img src="img/pic6.jpg"  ></a>
+        <a class="carousel-item" href="#two!"><img src="img/pic3.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/pic4.jpg" ></a>
+        <a class="carousel-item" href="#four!"><img src="img/pic5.jpg" ></a>
+        <a class="carousel-item" href="#five!"><img src="img/pic_7.jpg" ></a>
+      </div>  
+      <a href="zdjecia.html" class="ok"><button class="btn #448c85d6 teal lighten-2 pulse white-text">WIĘCEJ ZDJĘĆ</button></a>  
+    </div>
 
-         <div class="row" id="fs">
-          <div class="col s6 l6 push-l6">
-          <p class="flow-text black-text"></p>
-      <img src="img/pic_po.jpg" class="responsive-img materialboxed">
-         </div>
-         <div class="col s6 l6 pull-l5"></div>
-        </div>
-        </div>
-  </div>
+
+
 </section>
 
  
@@ -280,6 +272,18 @@
         $('.tabs').tabs();
         $('select').formSelect();
         $('.dropdown-trigger').dropdown();
+      
+  $('.carousel').carousel();
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+  $('.next').click(function(){
+    $('.carousel').carousel('next');
+  });
+  $('.prev').click(function(){
+    $('.carousel').carousel('prev');
+  });
 
   });
       

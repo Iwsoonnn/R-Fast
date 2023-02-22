@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="zdj_style.css">
 </head>
 <body>
@@ -36,11 +40,11 @@
           </nav>
           <h2 class="tekst">ZDJĘCIA</h2>
           <div class="input-field center">
-            <a href="#"><button class="btn #448c85d6 teal lighten-2 btn-floating btn-large pulse white-text"><i class="material-icons ">arrow_drop_down</i></button></a>
+            <a href="#address-box"><button class="btn #448c85d6 teal lighten-2 btn-floating btn-large pulse white-text"><i class="material-icons ">arrow_drop_down</i></button></a>
             </div>
       </header>
 
-      <section class="address-box">
+      <section class="address-box" id="address-box">
     
       
         <div class="inner-box"> 
@@ -62,75 +66,344 @@
         </div>
       </section>
 
-      <section class="container section" id="witamy">
-       
-        <div class="collection row">
-          
-        
-          <ul class="tabs">
-<li class="collection-item tab col s12 m6 l3" ><a class="active" href="#test2"id="first" >ALBUMY</a></li>
-            <li class="collection-item tab col s12 m6 l3" ><a href="#test1" >WSZYSTKIE ZDJĘCIA</a></li>
+      <div class="fixed-action-btn direction-top active"
+      style="margin: 0 0 5 1px;   ">
+        <a id="gora" href="#address-box"class="btn btn-floating btn-large #26a69a" 
+        style="border-radius: 90%;
+        width: 50px;
+    height: 50px;">
+          <i class="material-icons white-text" style="font-size: 30px;  line-height: 50px;">keyboard_arrow_up</i>
+        </a>
+      </div> 
 
-            <li class="collection-item tab col s12 m6 l3"> <a href="#test3" >ŁAZIENKI</a></li>
-            <li class="collection-item tab col s12 m6 l3 "><a href="#test4">PRZED-PO</a></li>
-                     
-            </ul>
-          </div>
-            <div id="test1" class="col s12">
-              
-           <div class="row">
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img"  src="img/pic3.jpg">
-            </div>
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img"  src="img/pic3.jpg">
-            </div>
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img" src="img/pic3.jpg">
-            </div>
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img" src="img/pic3.jpg">
-            </div>
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img" src="img/pic3.jpg">
-            </div>
-            <div class="zdjecie col s12 m6 l4">
-              <img class="materialboxed responsive-img" src="img/pic3.jpg">
-            </div>
-           </div>
-          
-            </div>
-            <div id="test2" class="col s12"><section class="container section" id="o_nas">
-              <div class="row">
-                  <div class="col s12 l6 ">
-                      <img src="img/pic9.jpg" class="responsive-img materialboxed">
-                  </div>
-                  <div class="col s12 l6">
-                    <h3 class="black-text">WYKOŃCZENIA WNĘTRZ</h3>
-                    <p>Oferujemy wykończenia wnętrz oraz remonty mieszkań, pojedynczych pomieszczeń oraz innych. Gwarantujemy spektakularny efekt metamorfozy po zakończonej pracy.</p>
-                  </div>
-              </div>
-              <div class="row">
-                <div class="col s12 l6 push-l7">
-                  <img src="img/pic4.jpg" class="responsive-img materialboxed">
-                </div>
-                <div class="col s12 l6 pull-l5">
-                  <h3 class="black-text">DOŚWIADCZENIE</h3>
-                  <p>
-                    Jesteśmy rzetelną firmą z wieloletnim doświadczeniem na rynku. Cieszymy się wieloma zleceniami 
-                  oraz pozytywnymi opiniami na temat wykonywanej przez nas pracy. 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="test3" class="col s12">Test 3</div>
-            <div id="test4" class="col s12">Test 4</div>
-          </div>
-        </div>
+      <section class="container section" id="witamy">
         
+        <div class="collection row col s12 m6 l4 ">
+          <ul class="tabs">
+            <li class=" tab col s12 m4 l4" ><a class="active "href="#test2" id="first" >ALBUMY</a></li>
+            <li class=" tab col s12 m4 l4" ><a href="#test1" >WSZYSTKIE ZDJĘCIA</a></li>
+            <li class=" tab col s12 m4 l4"> <a href="#test3" >PRZED-PO</a></li>
+            </ul>
+        </div>
+
+            <div id="test1" class="col s12">
+           <div class="row">
+<p class="imglist" style="max-width: 1000px;">
+  <a href="img/pic1B.jpg" data-fancybox="images" > 
+      <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic1B.jpg">
+  </a>
+  <a href="img/pic2.jpg" data-fancybox="images"> 
+    <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic2.jpg">
+</a>
+<a href="img/pic3.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic3.jpg">
+</a>
+<a href="img/pic4.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic4.jpg">
+</a>
+<a href="img/pic5.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic5.jpg">
+</a>
+<a href="img/pic6.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic6.jpg">
+</a>
+<a href="img/pic_7.jpg" data-fancybox="images"> 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic_7.jpg">
+</a>
+<a href="img/pic8.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic8.jpg">
+</a>
+<a href="img/pic9.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic9.jpg">
+</a>
+<a href="img/pic10.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic10.jpg">
+</a>
+<a href="img/pic11.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic11.jpg">
+</a>
+<a href="img/pic12.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic12.jpg">
+</a>
+<a href="img/pic13.jpg" data-fancybox="images"> 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic13.jpg">
+</a>
+<a href="img/pic14.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic14.jpg">
+</a>
+<a href="img/pic15.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic15.jpg">
+</a>
+<a href="img/pic16.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic16.jpg">
+</a>
+<a href="img/pic17.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic17.jpg">
+</a>
+<a href="img/pic18.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic18.jpg">
+</a>
+<a href="img/pic19.jpg" data-fancybox="images"> 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic19.jpg">
+</a>
+<a href="img/pic20.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic20.jpg">
+</a>
+<a href="img/pic21.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic21.jpg">
+</a>
+<a href="img/pic22.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic22.jpg">
+</a>
+<a href="img/pic23.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic23.jpg">
+</a>
+<a href="img/pic24.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic24.jpg">
+</a>
+<a href="img/pic25.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic25.jpg">
+</a>
+<a href="img/pic26.jpg" data-fancybox="images"> 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic26.jpg">
+</a>
+<a href="img/pic27.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic27.jpg">
+</a>
+<a href="img/pic28.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic28.jpg">
+</a>
+<a href="img/pic29.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic29.jpg">
+</a>
+<a href="img/pic30.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic30.jpg">
+</a>
+<a href="img/pic3`.jpg" data-fancybox="images"> 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic3`.jpg">
+</a>
+<a href="img/pic32.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic32.jpg">
+</a>
+<a href="img/pic33.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic33.jpg">
+</a>
+<a href="img/pic34.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic34.jpg">
+</a>
+<a href="img/pic35.jpg" data-fancybox="images" > 
+<img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic35.jpg">
+</a>
+<a href="img/pic36.jpg" data-fancybox="images" > 
+  <img  class="zdjeciep responsive-img col s12 m6 l4" src="img/pic36.jpg">
+  </a>
+
+</p>
+
+          </div><!--test1 row end-->
+
+            </div><!--test1 end-->
+            <div id="test2" class="col s12">
+              <section class="container section" id="o_nas">
+                <div class="row">
+                      <div class="col s12 l6 ">
+                        <div class="carousel one carousel-slider" data-indicators="true">  
+                          <div class="col s12 l6 carousel-fixed-item ">
+                          <button class="prev left white-text" id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                          <button class="next right white-text "id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                          </div>
+                          <a class="carousel-item" href="#one!"><img src="img/pic5.jpg"  ></a>
+                          <a class="carousel-item" href="#two!"><img src="img/pic3.jpg"></a>
+                          <a class="carousel-item" href="#three!"><img src="img/pic11.jpg" ></a>
+                          <a class="carousel-item" href="#four!"><img src="img/pic12.jpg" ></a>
+                          <a class="carousel-item" href="#five!"><img src="img/pic13.jpg"></a>
+                        </div>  
+                      </div>
+
+                      <div class="col s12 l6">
+                        <h3 class="black-text">Złote mieszkanie...</h3>
+                        <p>Złote dodatki są najlepszym sposobem na dodanie blasku i elegancji każdemu wnętrzu!!</p>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6 push-l6">
+                      <div class="carousel dwa carousel-slider" data-indicators="true">  
+                        <div class="col s12 l6 carousel-fixed-item ">
+                        <button class="prevdwa left white-text"  id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                        <button class="nextdwa right white-text" id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                        </div>
+                        <a class="carousel-item" href="#one!"><img src="img/pic_7.jpg"  ></a>
+                        <a class="carousel-item" href="#two!"><img src="img/pic8.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="img/pic14.jpg" ></a>
+                        <a class="carousel-item" href="#four!"><img src="img/pic15.jpg" ></a>
+                        
+                      </div>  
+                    </div>
+                    <div class="col s12 l6 pull-l6">
+                      <h3 class="black-text">Blok to też nie problem...</h3>
+                    <p>Mieszkanie dwupoziomowe w bloku rozdzielone na dwa niezależne mieszkania.
+                      A oto jedno z nich</p>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 l6 ">
+                      <div class="carousel trzy carousel-slider" data-indicators="true">  
+                        <div class="col s12 l6 carousel-fixed-item ">
+                        <button class="prevtrzy left white-text" id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                        <button class="nexttrzy right white-text "id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                        </div>
+                        <a class="carousel-item" href="#one!"><img src="img/pic10.jpg"  ></a>
+                        <a class="carousel-item" href="#two!"><img src="img/pic17.jpg"></a>
+                        <a class="carousel-item" href="#three!"><img src="img/pic18.jpg" ></a>
+                        <a class="carousel-item" href="#four!"><img src="img/pic19.jpg" ></a>
+                      
+                      </div>  
+                    </div>
+
+                    <div class="col s12 l6">
+                      <h3 class="black-text">Nowocześnie i stylowo...</h3>
+                      <p>Jedna z naszych ostatnich realizacji na terenie Rzeszowa.</p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6 push-l6">
+                    <div class="carousel cztery carousel-slider" data-indicators="true">  
+                      <div class="col s12 l6 carousel-fixed-item ">
+                      <button class="prevcztery left white-text"  id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                      <button class="nextcztery right white-text" id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                      </div>
+                      <a class="carousel-item" href="#one!"><img src="img/pic9.jpg"  ></a>
+                      <a class="carousel-item" href="#two!"><img src="img/pic1B.jpg"></a>
+                      <a class="carousel-item" href="#three!"><img src="img/pic6.jpg" ></a>
+                      <a class="carousel-item" href="#four!"><img src="img/pic16.jpg" ></a>
+                    
+                    </div>  
+                  </div>
+                  <div class="col s12 l6 pull-l6">
+                    <h3 class="black-text">Detale... </h3>
+                  <p>Ta realizacja nie należała do najprostszych. Projekt wymagający wielu przeróbek i precyzji.
+                    A oto efekty ! </p>  
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6 ">
+                    <div class="carousel piec carousel-slider" data-indicators="true">  
+                      <div class="col s12 l6 carousel-fixed-item ">
+                      <button class="prevpiec left white-text" id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                      <button class="nextpiec right white-text "id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                      </div>
+                      <a class="carousel-item" href="#one!"><img src="img/pic20.jpg"  ></a>
+                      <a class="carousel-item" href="#two!"><img src="img/pic21.jpg"></a>
+                      <a class="carousel-item" href="#three!"><img src="img/pic22.jpg" ></a>
+                      <a class="carousel-item" href="#four!"><img src="img/pic23.jpg" ></a>
+                      <a class="carousel-item" href="#five!"><img src="img/pic24.jpg" ></a>
+                      <a class="carousel-item" href="#six!"><img src="img/pic25.jpg" ></a>
+                      <a class="carousel-item" href="#seven!"><img src="img/pic26.jpg" ></a>
+                    </div>  
+                  </div>
+
+                  <div class="col s12 l6">
+                    <h3 class="black-text">Świeży design...</h3>
+                    <p>Kompleksowe wykończenie domu na terenie Rzeszowa w naszym wykonaniu.
+                      Podwieszane sufity z ledami oraz tapety w łazienkach nadają niesamowity klimat</p>
+                  </div>
+
+                </div>
+                <div class="row">
+                <div class="col s12 l6 push-l6">
+                  <div class="carousel szesc carousel-slider" data-indicators="true">  
+                    <div class="col s12 l6 carousel-fixed-item ">
+                    <button class="prevszesc left white-text"  id="wstecz">  <i class="material-icons">chevron_left</i></button>
+                    <button class="nextszesc right white-text" id="dalej">  <i class="material-icons">chevron_right</i></button> 
+                    </div>
+                    <a class="carousel-item" href="#one!"><img src="img/pic27.jpg"  ></a>
+                    <a class="carousel-item" href="#two!"><img src="img/pic28.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img src="img/pic29.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="img/pic30.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="img/pic32.jpg" ></a>
+                    <a class="carousel-item" href="#six!"><img src="img/pic33.jpg"></a>
+                    <a class="carousel-item" href="#seven!"><img src="img/pic34.jpg" ></a>
+                    <a class="carousel-item" href="#eight!"><img src="img/pic35.jpg" ></a>
+                    <a class="carousel-item" href="#nine!"><img src="img/pic36.jpg" ></a>
+                  </div>  
+                </div>
+                <div class="col s12 l6 pull-l6">
+                  <h3 class="black-text">Aranżacja miejsca</h3>
+                <p>Mieszkanie w stanie deweloperskim na piętrze szeregówki 80m<sup>2 </sup>  rozdzielone na 
+                  dwa osobne mieszkania po 40m<sup>2 </sup> poprzez postawienie dodatkowych ścian oraz wstawienie drzwi wejściowych </p>  
+                </div>
+                </div>
+              </section>
+
+            </div><!--test2 end-->
+            <div id="test3" class="col s12">
+             <section>
+              <div class="row">
+              <div class='container pp col s12 m6 l6 '>
+                <div class='img background-img '></div>
+                <div class='img foreground-img zpp'></div>
+                <input type="range" min="1" max="100" value="50" class="suw" name='suwak' id="suwak" >
+                <div class='slider-button' id="slider_btn" style="left: calc (54% - 18px);"></div>
+              </div>
+              <div class=' col s12 m6 l6 push-l1'>
+                <h3>Przesuń suwak...</h3>
+                <h5>Zobacz efekt metamorfozy...</h5>
+                <p>Nowa aranżacja powiększyła optycznie łazienkę.</p>
+                <p>Z naszym zespołem nawet najmniejsze pomieszczenie stanie się funkcjonalne i eleganckie.</p>
+              </div>
+               </div>
+               
+               <div class="row">
+                <div class='container pp col s12 m6 l6 '>
+                  <div class='img background-img_two '></div>
+                  <div class='img foreground-img_two zpp'></div>
+                  <input type="range" min="1" max="100" value="50" class="suw" name='suwak_two' id="suwak_two" >
+                  <div class='slider-button_two' id="slider_btn" style="left: calc (54% - 18px);"></div>
+                </div>
+                <div class='col s12 m6 l6 push-l1'>
+                  <h3>Przesuń suwak...</h3>
+                  <h5>Zobacz efekt metamorfozy...</h5>
+                  <p>Remont nie należał do najprostrzych...</p>
+                  <p>Wielka metamorfoza w naszym wykonaniu. </p>
+                  <p>Uzyskaliśmy piękny nowy metraż dla nszych klientów.</p>
+                    
+                </div>
+
+                 </div>
+                 <div class="row">
+                  <div class='container pp col s12 m6 l6 '>
+                    <div class='img background-img_three '></div>
+                    <div class='img foreground-img_three zpp'></div>
+                    <input type="range" min="1" max="100" value="50" class="suw" name='suwak_three' id="suwak_three" >
+                    <div class='slider-button_three' id="slider_btn" style="left: calc (54% - 18px);"></div>
+                  </div>
+                  <div class=' col s12 m6 l6 push-l1'>
+                    <h3>Przesuń suwak...</h3>
+                    <h5>Zobacz efekt metamorfozy...</h5>
+                    <p>Kilka starych desek zamieniło się w wykończoną ścianę nadającą mieszkaniu nowy przedsionek.</p>
+                  </div>
+                   </div>
+                 
+             </section>
+              <!--               <div class="row ">
+                <p class="imglist" style="max-width: 1000px;">
+                  <a href="img/pic1B.jpg" data-fancybox="imagesn" > 
+                      <img  class="zdjeciepp responsive-img col s12 m6 l6" src="img/pic1B.jpg">
+                  </a>
+                  <a href="img/pic2.jpg" data-fancybox="imagesn"> 
+                    <img  class="zdjeciepp responsive-img col s12 m6 l6" src="img/pic2.jpg">
+                </a>
+                <a href="img/pic3.jpg" data-fancybox="imagesn" > 
+                  <img  class="zdjeciepp responsive-img col s12 m6 l6" src="img/pic3.jpg">
+                </a>
+                <a href="img/pic4.jpg" data-fancybox="imagesn" > 
+                  <img  class="zdjeciepp responsive-img col s12 m6 l6" src="img/pic4.jpg">
+                </a>
+                </p>
+              </div>-->
+              </div><!--test3 end-->
       </section>
-          
-      
+    
       <footer class="page-footer grey darken-4">
         <div class="container pin-bottom " id="stopka">
           <div class="row">
@@ -165,21 +438,105 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+<script src="
+https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.min.js
+"></script>
+
     <script>
       $(document).ready(function(){
         $('.sidenav').sidenav();
         $('.tabs').tabs();
-        
-
-    $('ul.tabs').tabs();
-
-    
- 
-     
+        $('ul.tabs').tabs();      
         $('.materialboxed').materialbox();
-      $('.carousel').carousel();
-      $('.collapsible').collapsible();
+        $('.collapsible').collapsible();
+        $('.carousel').carousel();
+        $('.tooltipped').tooltip();
+    $('.tap-target').tapTarget();
+
+    $("#suwak_three").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.foreground-img_three').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.slider-button_three').css('left', `calc(${sliderPos}% - 18px)`)
+});
+    $("#suwak_two").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.foreground-img_two').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.slider-button_two').css('left', `calc(${sliderPos}% - 18px)`)
+});
+    $("#suwak").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.foreground-img').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+});
+
+        $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+        });
+        $('.carousel.dwa.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+        });
+        $('.carousel.trzy.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+        });
+        $('.next').click(function(){
+          $('.carousel.one').carousel('next');
+          
+        });
+        $('.prev').click(function(){
+          $('.carousel.one').carousel('prev');
+        });
+        
+        $('.nextdwa').click(function(){
+          $('.carousel.dwa').carousel('next');
+        });
+        $('.prevdwa').click(function(){
+          $('.carousel.dwa').carousel('prev');
+        });
+
+        $('.nexttrzy').click(function(){
+          $('.carousel.trzy').carousel('next');
+        });
+        $('.prevtrzy').click(function(){
+          $('.carousel.trzy').carousel('prev');
+        });
+       
+        $('.nextcztery').click(function(){
+          $('.carousel.cztery').carousel('next');
+        });
+        $('.prevcztery').click(function(){
+          $('.carousel.cztery').carousel('prev');
+        });
+
+        $('.nextpiec').click(function(){
+          $('.carousel.piec').carousel('next');
+        });
+        $('.prevpiec').click(function(){
+          $('.carousel.piec').carousel('prev');
+        });
+
+        $('.nextszesc').click(function(){
+          $('.carousel.szesc').carousel('next');
+        });
+        $('.prevszesc').click(function(){
+          $('.carousel.szesc').carousel('prev');
+        });
+
+        $('.nextseven').click(function(){
+          $('.carousel.seven').carousel('next');
+          
+        });
+        $('.prevseven').click(function(){
+          $('.carousel.seven').carousel('prev');
+        });
   });
       
     </script>

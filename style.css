@@ -12,7 +12,6 @@ padding-top: 11%;
 letter-spacing: 4px;
 }
 
-
 html, body {
     height: 100%;
     scroll-behavior: smooth;
@@ -74,7 +73,58 @@ html, body {
   position: relative;
 }
 
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 120px;
+    height: 70px;
+    width: 100%;
+}
+.row .fancybox{
+display: flex;
+    
+}    
+.prev{
+height: 100%;
+width: 30%;
+background-color: transparent;
+border: #b1b1b1;
+text-align: left;
 
+}
+.prev i {
+    font-size: 40px;
+    cursor: pointer;
+}
+.prev:focus {
+
+    outline: none;
+    background-color:transparent;
+}
+.next{
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+    border: #b1b1b1;
+    text-align: right;
+    
+}
+.next i {
+    font-size: 40px;
+    cursor: pointer;
+}
+.next:focus {
+
+    outline: none;
+    background-color:transparent;
+}
+.ok button{
+   
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        margin-top: 1%;
+        font-size: 20px;
+  
+}
 .pinned {
   position: fixed !important;
 }
